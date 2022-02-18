@@ -1,4 +1,4 @@
-const rabbitConnection = require('./sharedRabbitMqResource.js');  //Waarom wordt het maken van een connectie in een module gezet?
+
 
   
 

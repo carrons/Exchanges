@@ -1,11 +1,9 @@
 
-//Waarom wordt het maken van een connectie in een module gezet?
-
-const rabbitConnection = require('./sharedRabbitMqResource.js');  
-
-let channel            = null;   
+const amqp = require('amqplib');
+const uri = 'amqp://localhost:5672';
 
 
+  
 
 const consume = async ()=>{
     try { 
@@ -14,9 +12,9 @@ const consume = async ()=>{
         // Een check of de channel geïnstantieerd is. 
         //Waarom wordt dit gedaan?
 
-        if(channel === null){
-            channel = await connection.createConfirmChannel();
-        }
+        
+        channel = await connection.createChannel();
+        
         //code voor assert queue
         //code voor bindQueue
         //code voor de consume, dus dit:
