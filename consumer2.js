@@ -9,8 +9,7 @@ const consume = async ()=>{
     try { 
         const connection = await rabbitConnection;
         
-        // Een check of de channel geïnstantieerd is. 
-        //Waarom wordt dit gedaan?
+        
 
         
         channel = await connection.createChannel();
