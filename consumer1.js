@@ -1,10 +1,9 @@
 const amqp = require('amqplib');
-const uri = 'amqp://localhost:5672';
+const uri  = 'amqp://localhost:5672';
 
 const consume = async ()=>{
     try { 
-        const connection = await rabbitConnection;
-        
+        const connection = await amqp.connect(uri);;
         channel = await connection.createChannel();
         
         //code voor assert queue
