@@ -2,7 +2,7 @@ Bij deze opdracht ga je het pub/sub patroon maken op twee exchange types, nl. de
 
 De beide varianten kun je vinden via deze link van RabbitMQ
 
-1) Voor de Direct Exchange zorg je dat je een tekst hebt met een severity level die ja als string meegeeft.
+1) Voor de Direct Exchange zorg je dat je een tekst hebt met een severity level die je als string meegeeft.
 Je bouwt dus het voorbeeld na dat ook op de site van RabbitMQ te vinden is.
 
 
